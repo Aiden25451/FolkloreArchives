@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+  }
+  
+.background {
+    /* The image used */
+    background-image: url('img/Wendigo.png');
+    
+    /* Full height */
+    height: 250%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background #title {
+    color: rgb(72, 84, 95);
+    text-align: center;
+    padding-top: 10vw;
+    font-size: 6vw;
+    line-height: 7.9vw;
+}
+
+.background #title span {
+    background-color: rgb(136, 176, 214, 0.7); 
+    height:100%;
+}
+
+.background2 {
+    /* The image used */
+    background-image: url('img/gorgon.png');
+    
+    /* Full height */
+    height: 250%; 
+    
+    /* Center and scale the image nicely */
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2 #title {
+    padding-top: 5vw;
+    color: rgb(72, 84, 95);
+    text-align: center;
+    font-size: 6vw;
+    line-height: 7.9vw;
+}
+
+.main {
+    margin-top: 50px;
+    background-color: rgb(109, 109, 109);
+    text-align: left;
+    font-size: 2vw;
+    color:rgb(39, 39, 39);
+}
+
+h2{
+    font-size: 4vw;
+}
+
+img {
+    max-width:50%;
+    max-height:50%;
+    width: auto;
+    height: auto;
+}
+

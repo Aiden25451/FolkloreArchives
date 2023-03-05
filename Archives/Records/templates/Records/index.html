@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- My Css page -->
+    <link rel="stylesheet" href="{% static 'Records/index.css' %}">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>Archives</title>
+</head>
+<body class="animation">
+    <div class="row">
+        <div class="column col-sm-2">
+
+        </div>
+        <div class="column col-sm-8 main">
+            <table>
+                <tr>
+                    <th class="rl">ID</th>
+                    <th class="rl">CREATURE NAME</th>
+                    <th>  STATUS  </th>
+                </tr>
+                <tr>
+                    <td class="rl">001</td>
+                    <td class="rl">Wendigo</td>
+                    <td><a href="\Wendigo">FOUND</a></td>
+                </tr>
+                <tr>
+                    <td class="rl">002</td>
+                    <td class="rl">Gorgon</td>
+                    <td><a href="\Gorgon">FOUND</a></td>
+                </tr>
+                {% for name in names %}
+                <tr>
+                    <td class="rl">{{ name.0 }}</td>
+                    <td class="rl">{{ name.1 }}</td>
+                    <td><a href="">NOT FOUND</a></td>
+                </tr>
+                {% endfor %}    
+            </table>
+        </div>
+        
+        <div class="column col-sm-2">
+
+        </div>
+    </row>
+    
+    <script src="{% static 'Records/static.js' %}"></script>
+    
+</body>
